@@ -16,8 +16,8 @@ public class MoveDrops : MonoBehaviour
         dropCommand = aDropCommand;
     }
 
-
-    void Start() //need to be earlier in start order to prevent errors
+    //implementation of Commmand pattern
+    void Start() 
     {
         IDropCommand DropStationary = new DropStationary();
         IDropCommand DropWander = new DropWander(DropStationary);

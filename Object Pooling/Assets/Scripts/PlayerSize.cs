@@ -19,7 +19,7 @@ public class PlayerSize : MonoBehaviour
     }
 
 
-    // Update is called once per frame
+    //implementation of State pattern
     void Update()
     {
         currentState?.Execute(Player);

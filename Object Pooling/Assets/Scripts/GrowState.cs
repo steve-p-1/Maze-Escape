@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GrowState : ISizeState
 {
-    // one implementation of State pattern
+    
     public void Execute(GameObject Player)
     {
         if (Player.transform.localScale.x < 4.2)
